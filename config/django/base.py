@@ -16,9 +16,8 @@ ALLOWED_HOSTS = env.list('ALLOWED_HOSTS', default=['*'])
 LOCAL_APPS = [
     'api_socailnetwork.core.apps.CoreConfig',
     'api_socailnetwork.common.apps.CommonConfig',
-    'api_socailnetwork.users.apps.UsersConfig',
     'api_socailnetwork.authentication.apps.AuthenticationConfig',
-    'accouont.apps.AccouontConfig',
+    'api_socailnetwork.accouont.apps.AccouontConfig',
 ]
 
 THIRD_PARTY_APPS = [
