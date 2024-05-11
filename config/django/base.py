@@ -18,6 +18,7 @@ LOCAL_APPS = [
     'api_socailnetwork.common.apps.CommonConfig',
     'api_socailnetwork.users.apps.UsersConfig',
     'api_socailnetwork.authentication.apps.AuthenticationConfig',
+    'accouont.apps.AccouontConfig',
 ]
 
 THIRD_PARTY_APPS = [
