@@ -16,8 +16,9 @@ ALLOWED_HOSTS = env.list('ALLOWED_HOSTS', default=['*'])
 LOCAL_APPS = [
     'api_socailnetwork.core.apps.CoreConfig',
     'api_socailnetwork.common.apps.CommonConfig',
-    'api_socailnetwork.users.apps.UsersConfig',
     'api_socailnetwork.authentication.apps.AuthenticationConfig',
+    'api_socailnetwork.User.apps.UserConfig',
+
 ]
 
 THIRD_PARTY_APPS = [
@@ -75,6 +76,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'config.wsgi.application'
 
+AUTH_USER_MODEL = 'User.BaseUser'
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
@@ -114,7 +116,6 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
-AUTH_USER_MODEL = 'users.BaseUser'
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
