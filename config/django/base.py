@@ -18,8 +18,9 @@ LOCAL_APPS = [
     'api_socailnetwork.common.apps.CommonConfig',
     'api_socailnetwork.authentication.apps.AuthenticationConfig',
     'api_socailnetwork.User.apps.UserConfig',
-
+    'api_socialnetwork.authentication.apps.AuthenticationConfig',
 ]
+
 
 THIRD_PARTY_APPS = [
     'rest_framework',
